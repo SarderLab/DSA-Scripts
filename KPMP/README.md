@@ -58,7 +58,25 @@ The script:
 - Update the folder id, and API Key (changes the json as needed before calling the API **if you want controlled cleaning**)
 - Run the script `python remove_metadata.py`
 
-### Annotations access control
-- The file `annotation_access_control.py` will help you understand how you can change someone's access control to the annotations on Athena.
-- The file `annotation_namechaneg_accesscontrol.py` is easy also addressing the same access control of annotations but it also helps change the names of the annotations.
-- As admin you can always view the annotations irrespective of the hidden/visible status.
+# Annotation Rename & Access Control (HistomicsUI / DSA)
+
+Bulk-renames annotation layers and sets their visibility across all slides in the
+given folders (subfolders included), using `girder_client`.
+
+- Renames layers listed in `RENAME_MAP`.
+- Non-admin users see only the renamed layers and `PROTECTED_NAMES`. All other layers are hidden.
+- Nothing is deleted. Shapes are never changed.
+
+## Usage
+
+```bash
+pip install girder-client
+python annotation_namechange_accesscontrol.py
+```
+
+1. Set `API_URL` and `FOLDER_IDS` at the top of the script.
+2. Run with `DRY_RUN = True` (default) and review the report and `plan.csv`.
+3. Set `DRY_RUN = False`, run, and type `YES`.
+4. To undo, set `RESTORE_RUN = "runs/<timestamp>"` and run again.
+
+Requires admin rights on the annotations. Do not commit API keys or the `runs/` folder.
