@@ -7,10 +7,10 @@ Digital Slide Archive (DSA / HistomicsUI) servers Athena and DevAthena, using th
 
 | Folder | What it does |
 |---|---|
-| [`KPMP/annotation_access_control`](KPMP/annotation_access_control.py) | Bulk-rename annotation layers and set which layers non-admin users can see |
-| [`KPMP/annotation_access_control`](KPMP/annotation_access_control) | Remove specific users from annotation access lists, except for kept layers |
-| [`KPMP/remove_metadata`](KPMP/remove_metadata) | Delete all user metadata from items in a folder |
-| [`KPMP/athena_to_hipergator_metadata`](KPMP/athena_to_hipergator_metadata) | Export user metadata and annotations from Athena to HiPerGator, and aggregate them to CSV |
+| [`KPMP/annotation_access_control`](KPMP/annotation_namechange_accesscontrol.py) | Bulk-rename annotation layers and set which layers non-admin users can see |
+| [`KPMP/annotation_access_control`](KPMP/annotation_access_control.py) | Remove specific users from annotation access lists, except for kept layers |
+| [`KPMP/remove_metadata`](KPMP/remove_metadata.py) | Delete all user metadata from items in a folder |
+| [`KPMP/athena_to_hipergator_metadata`](KPMP/metadata.py) | Export user metadata and annotations from Athena to HiPerGator, and aggregate them to CSV |
 
 ## Requirements
 
