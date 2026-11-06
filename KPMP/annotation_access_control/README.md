@@ -12,4 +12,4 @@ except for annotations whose names are in `keep_names`.
    ```
 
 Note: this changes access immediately; there is no dry run. For renaming layers and a safer workflow with dry run and undo,
-see [`annotation_namechange_accesscontrol`](KPMP/annotation_namechange_accesscontrol/annotation_namechange_accesscontrol.py).
+see [`annotation_namechange_accesscontrol`](annotation_namechange_accesscontrol/annotation_namechange_accesscontrol.py).
