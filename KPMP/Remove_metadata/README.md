@@ -12,4 +12,4 @@ Deletes **all** user metadata keys from every item in a folder and its subfolder
    ```
 
 ⚠️ This cannot be undone and there is no dry run. Export the metadata first if you might need it
-(see [`Metadata`]((https://github.com/SarderLab/DSA-Scripts/blob/main/KPMP/Metadata/Metadata.py))).
+(see [`Metadata`](https://github.com/SarderLab/DSA-Scripts/blob/main/KPMP/Metadata/Metadata.py).
